@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
   p phone
-  p phone.scan(/^\d{10}$/)
+  p phone.scan(/^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/)    #(/^\d{10}$/)
   # phone.match?()
 end
