@@ -15,7 +15,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   p text
   # '^' is start of a line and '$' is end of line
-  p text.scan(/^[A-Z](...)\W$/) # we are looking for the start of a line with A-Z and any single character zero or more times followed by a non-word character followed by the end of aline
+  p text.scan(/^[A-Z].*\W$/) # we are looking for the start of a line with A-Z and any single character zero or more times followed by a non-word character followed by the end of aline
   p text.test?
 end
 
