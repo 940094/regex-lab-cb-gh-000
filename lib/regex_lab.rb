@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
   p phone
-  p phone.scan(//)
+  p phone.scan(/^\d{10}$/)
   # phone.match?()
 end
