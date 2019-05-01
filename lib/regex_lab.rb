@@ -6,7 +6,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   p text
-  results = text.scan(/un\w+ing/) #
+  results = text.scan(/un\w+ing/) # say what we are matching literally: "we are looking for an 'un' followed by any number of characters (the '+' says we will match whatever comes before it 1 or more times) followed by 'ing'"
   p results
 
 end
