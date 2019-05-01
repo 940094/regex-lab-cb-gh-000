@@ -15,11 +15,9 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   # '^' is start of a line and '$' is end of line
   # #match? returns true/false
-  return text.match?(/^[A-Z].*\W$/) # we are looking for the start of a line with A-Z and any single character zero or more times followed by a non-word character followed by the end of aline
+  text.match?(/^[A-Z].*\W$/) # we are looking for the start of a line with A-Z and any single character zero or more times followed by a non-word character followed by the end of aline
 end
 
 def valid_phone_number?(phone)
-  p phone
-  p phone.match?(/^\(?([0-9]{3})\)?[-.●\s]?([0-9]{3})[-.●\s]?([0-9]{4})$/) # https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html
-  # phone.match?()
+  phone.match?(/^\(?([0-9]{3})\)?[-.●\s]?([0-9]{3})[-.●\s]?([0-9]{4})$/) # https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html
 end
