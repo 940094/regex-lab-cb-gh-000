@@ -14,9 +14,12 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   # '^' is start of a line and '$' is end of line
+  # #match? returns true/false
   return text.match?(/^[A-Z].*\W$/) # we are looking for the start of a line with A-Z and any single character zero or more times followed by a non-word character followed by the end of aline
 end
 
 def valid_phone_number?(phone)
-
+  p phone
+  p phone.scan(//)
+  # phone.match?()
 end
