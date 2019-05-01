@@ -9,12 +9,12 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  p text
-  p text.scan(/\b\w{5}\b/)
+  text.scan(/\b\w{5}\b/)  # "we are looking for a new word that has 5 alpha-numeric characters and then the word ends"
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  p text.scan(/\b[A-Z]\w+[.,\/#!$%\^&\*;:{}=\-_`~()]\b/) # find text starting with capital letter and enginering with punctuation
+  p text.test?
 end
 
 def valid_phone_number?(phone)
