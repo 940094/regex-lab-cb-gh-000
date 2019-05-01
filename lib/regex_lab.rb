@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
   p phone
-  p phone.match?(/^\(?([0-9]{3})\)?[-.●\s]?([0-9]{3})[-.●\s]?([0-9]{4})$/)    #(/^\d{10}$/) # https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html
+  p phone.match?(/^\(?([0-9]{3})\)?[-.●\s]?([0-9]{3})[-.●\s]?([0-9]{4})$/) # https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html
   # phone.match?()
 end
